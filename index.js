@@ -1,5 +1,5 @@
-fetch("https://ncsify.onrender.com")
-    .then((res) => res.json())
+fetch("https://ncsify.onrender.com/cron")
+    .then((res) => res.text())
     .then((data) => {
         console.log(data);
     });
