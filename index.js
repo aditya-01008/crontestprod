@@ -3,6 +3,10 @@ require("dotenv").config();
 
 const app = express();
 
+app.listen("/test", (req, res) => {
+    res.send("Working!");
+});
+
 const cronjob = () =>
     fetch("https://ncsify.onrender.com/cron")
         .then((res) => res.text())
