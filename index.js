@@ -14,7 +14,7 @@ const cronjob = () =>
             console.log(data);
         });
 
-const interval = 1000 * 60 * 14;
+const interval = 1000 * 60 * 5;
 
 setInterval(cronjob, interval);
 app.listen(process.env.PORT || 8000);
